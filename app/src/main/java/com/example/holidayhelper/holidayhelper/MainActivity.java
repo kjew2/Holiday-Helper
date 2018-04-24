@@ -13,20 +13,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final ImageButton SearchHoliday = findViewById(R.id.SearchHoliday);
-        final ImageButton SearchDate = findViewById(R.id.SearchDate);
-        SearchHoliday.setOnClickListener(new View.OnClickListener() {
+        final ImageButton Search = findViewById(R.id.Search);
+        Search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "SearchHoliday clicked.");
+                Log.d(TAG, "Search clicked.");
             }
         });
-        SearchDate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG, "SearchDate clicked.");
-            }
-        });
+
     }
 
 }

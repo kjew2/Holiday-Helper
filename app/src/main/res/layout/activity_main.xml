@@ -6,53 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/EnterDate"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:hint="enter a date"
-        android:inputType="textPersonName"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/SearchDate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/SearchDate"
-        android:layout_width="160dp"
-        android:layout_height="67dp"
-        android:layout_marginBottom="80dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_search_category_default" />
-
-    <TextView
-        android:id="@+id/ViewEnterDate"
-        android:layout_width="wrap_content"
-        android:layout_height="42dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:text="Enter a Date"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/EnterDate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/ViewEnterHoliday"
         android:layout_width="wrap_content"
@@ -62,7 +15,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="64dp"
-        android:text="Enter a Holiday"
+        android:text="Enter a Holiday/Date"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,7 +25,7 @@
 
     <EditText
         android:id="@+id/EnterHoliday"
-        android:layout_width="wrap_content"
+        android:layout_width="315dp"
         android:layout_height="41dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -80,14 +33,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="enter a holiday"
+        android:hint="Enter Holiday or Date (yyyy-mm-dd)"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ViewEnterHoliday" />
 
     <ImageButton
-        android:id="@+id/SearchHoliday"
+        android:id="@+id/Search"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
