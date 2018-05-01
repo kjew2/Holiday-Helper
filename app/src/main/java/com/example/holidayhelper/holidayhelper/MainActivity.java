@@ -96,9 +96,9 @@ public class MainActivity extends AppCompatActivity {
                                 final TextView date = findViewById(R.id.date);
                                 final TextView privacyText = findViewById(R.id.privacy);
                                 if (privacy) {
-                                    privacyText.setText("Public");
+                                    privacyText.setText("Public Holiday");
                                 } else {
-                                    privacyText.setText("Not Public");
+                                    privacyText.setText("Not a Public Holiday");
                                 }
                                 date.setText(name);
                             } catch (Exception e) {
